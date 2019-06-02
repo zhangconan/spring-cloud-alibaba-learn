@@ -1,0 +1,14 @@
+.idea
+.idea/*.xml
+.idea/inspectionProfiles
+.idea/inspectionProfiles/*.xml
+.idea/*.*
+/*/libraries
+.idea/spring-cloud-alibaba-learn.iml
+.idea/libraries/*.xml
+/spring-cloud-alibaba-sentinel-learn/*.iml
+/*/*.iml
+/*/*/target
+!/spring-cloud-alibaba-nacos-learn/nacos-config-learn/target/
+!/*/*/target/
+!/*/*/*/target/
