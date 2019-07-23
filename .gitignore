@@ -12,3 +12,8 @@
 !/spring-cloud-alibaba-nacos-learn/nacos-config-learn/target/
 !/*/*/target/
 !/*/*/*/target/
+!/spring-cloud-alibaba-nacos-learn/nacos-config-learn/alibaba-nacos-config-learn.iml
+/spring-cloud-alibaba-nacos-learn/nacos-config-learn/target/
+/spring-cloud-alibaba-nacos-learn/nacos-discovery-learn/alibaba-nacos-discovery-learn.iml
+/spring-cloud-alibaba-nacos-learn/nacos-config-learn/alibaba-nacos-config-learn.iml
+/spring-cloud-alibaba-nacos-learn/nacos-gateway-learn/alibaba-nacos-gateway-learn.iml

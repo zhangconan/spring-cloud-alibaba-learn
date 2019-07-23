@@ -10,13 +10,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>alibaba-nacos-config-learn</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>Spring Cloud Alibaba Nacos Config Learn</name>
     <description>Spring Cloud Alibaba Nacos Config Learn</description>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-loader</artifactId>
         </dependency>
     </dependencies>
     <build>
