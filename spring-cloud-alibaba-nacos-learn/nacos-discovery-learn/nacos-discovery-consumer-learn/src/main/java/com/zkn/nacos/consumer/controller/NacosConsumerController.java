@@ -1,7 +1,9 @@
-package com.zkn.nacos.config.controller;
+package com.zkn.nacos.consumer.controller;
 
+import com.zkn.nacos.consumer.service.EchoFeignService;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,15 +19,19 @@ import org.springframework.web.bind.annotation.RestController;
 @Setter
 @RefreshScope
 @RestController
-public class NacosConfigController {
-    /**
-     * 姓名
-     */
-    @Value("${zkn.nacos.name}")
-    private String name;
+public class NacosConsumerController {
 
-    @GetMapping("name")
-    public String name() {
-        return "name:" + name;
+    @Autowired
+    private EchoFeignService echoFeignService;
+
+    /**
+     * 输出姓名
+     *
+     * @param name
+     * @return
+     */
+    @GetMapping("GetName.json")
+    public String getName(String name) {
+        return "name:" + echoFeignService.getName(name);
     }
 }

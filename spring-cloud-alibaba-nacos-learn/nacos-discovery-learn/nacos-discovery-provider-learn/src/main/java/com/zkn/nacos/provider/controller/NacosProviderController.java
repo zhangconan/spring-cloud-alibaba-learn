@@ -1,4 +1,4 @@
-package com.zkn.nacos.config.controller;
+package com.zkn.nacos.provider.controller;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,17 +15,17 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Getter
 @Setter
-@RefreshScope
 @RestController
-public class NacosConfigController {
-    /**
-     * 姓名
-     */
-    @Value("${zkn.nacos.name}")
-    private String name;
+public class NacosProviderController {
 
-    @GetMapping("name")
-    public String name() {
-        return "name:" + name;
+    /**
+     * 得到姓名
+     *
+     * @param name
+     * @return
+     */
+    @GetMapping("GetName")
+    public String getName(String name) {
+        return "Provider-Name:" + name;
     }
 }

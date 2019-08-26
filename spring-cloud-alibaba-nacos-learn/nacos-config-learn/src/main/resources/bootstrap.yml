@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8060
 spring:
   application:
     name: cloud-alibaba-nacos-config-learn
