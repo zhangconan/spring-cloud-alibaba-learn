@@ -4,23 +4,24 @@
 
     <parent>
         <groupId>zkn.spring.cloud.alibaba</groupId>
-        <artifactId>spring-cloud-alibaba-nacos-learn</artifactId>
+        <artifactId>spring-cloud-alibaba-dubbo-nacos</artifactId>
         <version>1.0.0</version>
+        <relativePath>../../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>alibaba-nacos-config-learn</artifactId>
-    <version>1.0.0</version>
+    <artifactId>spring-alibaba-dubbo-nacos-provider</artifactId>
     <packaging>jar</packaging>
-    <name>Spring Cloud Alibaba Nacos Config Learn</name>
-    <description>Spring Cloud Alibaba Nacos Config Learn</description>
+    <name>Spring Cloud Alibaba Dubbo Nacos Provider Learn</name>
+    <description>Spring Cloud Alibaba Dubbo Nacos Provider Learn</description>
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-loader</artifactId>
+            <artifactId>spring-boot-actuator</artifactId>
+        </dependency>
+        <!-- Dubbo Spring Cloud Starter -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
     </dependencies>
     <build>
@@ -35,21 +36,6 @@
         </pluginManagement>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.1.7.RELEASE</version>
-                <configuration>
-                    <mainClass>com.zkn.nacos.config.NacosConfigApplication</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
@@ -59,36 +45,6 @@
                     <target>1.8</target>
                     <parameters>true</parameters>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.9</version>
-                <configuration>
-                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>unpack</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>unpack</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>${project.groupId}</groupId>
-                                    <artifactId>${project.artifactId}</artifactId>
-                                    <version>${project.version}</version>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -102,7 +58,6 @@
             </plugin>
         </plugins>
     </build>
-
     <profiles>
         <profile>
             <id>spring</id>

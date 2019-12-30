@@ -17,3 +17,6 @@
 /spring-cloud-alibaba-nacos-learn/nacos-discovery-learn/alibaba-nacos-discovery-learn.iml
 /spring-cloud-alibaba-nacos-learn/nacos-config-learn/alibaba-nacos-config-learn.iml
 /spring-cloud-alibaba-nacos-learn/nacos-gateway-learn/alibaba-nacos-gateway-learn.iml
+!/spring-cloud-alibaba-dubbo-learn/spring-cloud-dubbo-consumer/target/
+!/spring-cloud-alibaba-dubbo-learn/alibaba-nacos/spring-cloud-dubbo-consumer/target/
+!/spring-cloud-alibaba-dubbo-learn/alibaba-nacos/spring-cloud-dubbo-provider/target/

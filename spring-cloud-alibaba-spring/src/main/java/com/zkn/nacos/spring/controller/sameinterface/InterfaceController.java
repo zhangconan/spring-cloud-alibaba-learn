@@ -1,4 +1,4 @@
-package com.zkn.nacos.spring.controller;
+package com.zkn.nacos.spring.controller.sameinterface;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
