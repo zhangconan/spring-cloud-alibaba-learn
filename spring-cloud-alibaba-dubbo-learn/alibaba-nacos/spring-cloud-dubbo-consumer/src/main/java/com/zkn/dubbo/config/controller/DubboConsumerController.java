@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DubboConsumerController {
 
-    @Reference(version = "1.0.0")
+    @Reference
     private UserService userService;
 
     @GetMapping("name")

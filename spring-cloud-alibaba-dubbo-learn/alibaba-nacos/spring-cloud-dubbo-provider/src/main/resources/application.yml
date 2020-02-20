@@ -1,8 +1,5 @@
 server:
   port: 8112
-spring:
-  application:
-    name: cloud-alibaba-nacos-dubbo-provider-learn
 management:
   endpoints:
     web:
@@ -11,12 +8,3 @@ management:
 feign:
   hystrix:
     enabled: true
-dubbo:
-  scan:
-    base-packages: com.zkn.dubbo.config.service
-  protocols:
-    dubbo:
-      name: dubbo
-      port: -1
-  registry:
-    address: nacos://127.0.0.1:8848

@@ -9,7 +9,7 @@ import org.apache.dubbo.config.annotation.Service;
  * @date 2019-12-19 20:49
  * @classname UserServiceImpl
  */
-@Service(version = "1.0.0")
+@Service
 public class UserServiceImpl implements UserService {
 
     /**
