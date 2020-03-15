@@ -21,3 +21,9 @@
 !/spring-cloud-alibaba-dubbo-learn/alibaba-nacos/spring-cloud-dubbo-consumer/target/
 !/spring-cloud-alibaba-dubbo-learn/alibaba-nacos/spring-cloud-dubbo-provider/target/
 /logFilePath_IS_UNDEFINED/
+!/spring-cloud-alibaba-log-learn/spring-cloud-zipkin-client-learn/target/
+!/spring-cloud-alibaba-log-learn/spring-cloud-zipkin-server-learn/target/
+!/spring-cloud-dev-learn/spring-cloud-eureka-client-learn/target/
+!/spring-cloud-dev-learn/spring-cloud-eureka-client-learn/spring-cloud-eureka-client-learn.iml
+!/spring-cloud-dev-learn/spring-cloud-eureka-server-learn/spring-cloud-eureka-server-learn.iml
+/spring-cloud-dev-learn/spring-cloud-eureka-client-learn/spring-cloud-eureka-client-learn.iml

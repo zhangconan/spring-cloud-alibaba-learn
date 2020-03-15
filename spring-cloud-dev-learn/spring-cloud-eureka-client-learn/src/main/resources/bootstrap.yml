@@ -1,0 +1,15 @@
+server:
+  port: 8864
+
+spring:
+  application:
+    name: spring-cloud-eureka-client-learn
+  zipkin:
+    base-url: http://localhost:8862
+  sleuth:
+    sampler:
+      probability: 1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8861/eureka/

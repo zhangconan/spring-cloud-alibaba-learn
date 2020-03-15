@@ -1,0 +1,20 @@
+server:
+  port: 8863
+
+spring:
+  application:
+    name: cloud-alibaba-zipkin-client-learn
+    provider:
+      name: spring-cloud-eureka-client-learn
+  zipkin:
+    base-url: http://localhost:8862
+  sleuth:
+    sampler:
+      probability: 1
+  log:
+    path: /Users/conanzhang/logs/spring-cloud
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8861/eureka/
