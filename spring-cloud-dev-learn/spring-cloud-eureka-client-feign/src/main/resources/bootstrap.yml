@@ -1,0 +1,19 @@
+server:
+  port: 8866
+
+spring:
+  application:
+    name: spring-cloud-eureka-client-feign
+  zipkin:
+    base-url: http://localhost:8862
+  sleuth:
+    sampler:
+      probability: 1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8861/eureka/
+
+logging:
+  level:
+    org.springframework: debug

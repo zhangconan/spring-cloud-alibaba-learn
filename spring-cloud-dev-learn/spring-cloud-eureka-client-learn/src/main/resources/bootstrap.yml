@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: spring-cloud-eureka-client-learn
+  feign:
+    name: spring-cloud-eureka-client-feign
   zipkin:
     base-url: http://localhost:8862
   sleuth:
@@ -13,3 +15,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8861/eureka/
+
+logging:
+  level:
+    org.springframework: debug
