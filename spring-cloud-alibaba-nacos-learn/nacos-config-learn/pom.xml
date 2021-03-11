@@ -37,7 +37,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.1.7.RELEASE</version>
+                <version>2.3.7.RELEASE</version>
                 <configuration>
                     <mainClass>com.zkn.nacos.config.NacosConfigApplication</mainClass>
                 </configuration>
