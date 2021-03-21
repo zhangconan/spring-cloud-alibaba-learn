@@ -1,7 +1,7 @@
 package com.zkn.dubbo.config.service;
 
 import com.conan.shared.api.service.UserService;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
 /**
  * @author conanzhang@木森
@@ -9,7 +9,7 @@ import org.apache.dubbo.config.annotation.Service;
  * @date 2019-12-19 20:49
  * @classname UserServiceImpl
  */
-@Service
+@DubboService
 public class UserServiceImpl implements UserService {
 
     /**

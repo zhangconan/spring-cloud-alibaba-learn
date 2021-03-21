@@ -1,7 +1,9 @@
 package com.zkn.nacos.config.controller;
 
+import com.zkn.nacos.config.pojo.UserDomain;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,8 +26,17 @@ public class NacosConfigController {
     @Value("${zkn.nacos.name}")
     private String name;
 
+    @Autowired
+    private UserDomain userDomain;
+
     @GetMapping("name")
     public String name() {
         return "name:" + name;
+    }
+
+    @GetMapping("userDomain")
+    public UserDomain userDomain() {
+
+        return userDomain;
     }
 }
