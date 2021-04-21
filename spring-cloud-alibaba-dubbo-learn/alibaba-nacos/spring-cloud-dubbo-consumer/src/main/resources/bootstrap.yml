@@ -21,6 +21,9 @@ dubbo:
     port: -1
   cloud:
     subscribed-services: ${provider.application.name}
+  registry:
+    check: false
+    address: nacos://127.0.0.1:8848
   consumer:
     check: false
 provider:

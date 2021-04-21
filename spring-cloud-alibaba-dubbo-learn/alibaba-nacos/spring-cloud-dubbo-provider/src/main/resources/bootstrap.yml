@@ -20,9 +20,9 @@ dubbo:
   protocol:
     name: dubbo
     port: -1
-#  registry:
-#    address: spring-cloud://localhost
-#    check: false
+  registry:
+    address: nacos://127.0.0.1:8848
+    check: false
 
 logging:
   config: classpath:logback-spring.xml

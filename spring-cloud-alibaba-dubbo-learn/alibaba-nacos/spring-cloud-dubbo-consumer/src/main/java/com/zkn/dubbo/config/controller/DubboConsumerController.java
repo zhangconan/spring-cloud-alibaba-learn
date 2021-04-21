@@ -2,7 +2,6 @@ package com.zkn.dubbo.config.controller;
 
 import com.conan.shared.api.service.UserService;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DubboConsumerController {
 
-    @Reference
+    @DubboReference
     private UserService userService;
 
     @GetMapping("name")
