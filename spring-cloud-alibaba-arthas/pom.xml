@@ -8,22 +8,18 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-cloud-alibaba-dubbo-learn</artifactId>
-    <packaging>pom</packaging>
-    <name>Spring Cloud Alibaba Dubbo Learn</name>
-    <description>Spring Cloud Alibaba Dubbo Learn</description>
-    <properties>
-        <curator.version>4.0.1</curator.version>
-    </properties>
-    <dependencyManagement>
-<!--        <dependencies>-->
-<!--            <dependency>-->
-<!--                <groupId>org.apache.curator</groupId>-->
-<!--                <artifactId>curator-framework</artifactId>-->
-<!--                <version>${curator.version}</version>-->
-<!--            </dependency>-->
-<!--        </dependencies>-->
-    </dependencyManagement>
+    <artifactId>spring-cloud-alibaba-arthas</artifactId>
+    <packaging>jar</packaging>
+    <name>Spring Cloud Alibaba Arthas Learn</name>
+    <description>Spring Cloud Alibaba Arthas Learn</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.taobao.arthas</groupId>
+            <artifactId>arthas-spring-boot-starter</artifactId>
+            <version>3.4.8</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
     <build>
         <pluginManagement>
             <plugins>

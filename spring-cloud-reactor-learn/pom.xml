@@ -6,24 +6,26 @@
         <groupId>zkn.spring.cloud.alibaba</groupId>
         <artifactId>spring-cloud-alibaba-learn</artifactId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-cloud-alibaba-dubbo-learn</artifactId>
+    <artifactId>spring-cloud-reactor-learn</artifactId>
     <packaging>pom</packaging>
-    <name>Spring Cloud Alibaba Dubbo Learn</name>
-    <description>Spring Cloud Alibaba Dubbo Learn</description>
+    <name>Spring Cloud Reactor Learn Learn</name>
+    <description>Spring Cloud Reactor Learn</description>
     <properties>
-        <curator.version>4.0.1</curator.version>
+        <spring-cloud-openfeign.version>2.1.3.RELEASE</spring-cloud-openfeign.version>
     </properties>
-    <dependencyManagement>
-<!--        <dependencies>-->
-<!--            <dependency>-->
-<!--                <groupId>org.apache.curator</groupId>-->
-<!--                <artifactId>curator-framework</artifactId>-->
-<!--                <version>${curator.version}</version>-->
-<!--            </dependency>-->
-<!--        </dependencies>-->
-    </dependencyManagement>
+    <dependencies>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-reactor-netty</artifactId>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+    </dependencies>
     <build>
         <pluginManagement>
             <plugins>

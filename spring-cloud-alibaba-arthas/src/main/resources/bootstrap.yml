@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cloud-alibaba-learn-arthas
+  main:
+    allow-bean-definition-overriding: true
+

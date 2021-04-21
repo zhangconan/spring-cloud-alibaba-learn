@@ -4,26 +4,19 @@
 
     <parent>
         <groupId>zkn.spring.cloud.alibaba</groupId>
-        <artifactId>spring-cloud-alibaba-learn</artifactId>
+        <artifactId>spring-cloud-dev-learn</artifactId>
         <version>1.0.0</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-cloud-alibaba-dubbo-learn</artifactId>
-    <packaging>pom</packaging>
-    <name>Spring Cloud Alibaba Dubbo Learn</name>
-    <description>Spring Cloud Alibaba Dubbo Learn</description>
-    <properties>
-        <curator.version>4.0.1</curator.version>
-    </properties>
-    <dependencyManagement>
-<!--        <dependencies>-->
-<!--            <dependency>-->
-<!--                <groupId>org.apache.curator</groupId>-->
-<!--                <artifactId>curator-framework</artifactId>-->
-<!--                <version>${curator.version}</version>-->
-<!--            </dependency>-->
-<!--        </dependencies>-->
-    </dependencyManagement>
+    <artifactId>spring-cloud-reactor-fir</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>Spring Cloud Alibaba Reactor</name>
+    <description>Spring Cloud Reactor</description>
+    <dependencies>
+
+    </dependencies>
     <build>
         <pluginManagement>
             <plugins>
@@ -36,6 +29,11 @@
         </pluginManagement>
         <plugins>
             <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.7.RELEASE</version>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
@@ -45,6 +43,28 @@
                     <target>1.8</target>
                     <parameters>true</parameters>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>unpack</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>${project.groupId}</groupId>
+                                    <artifactId>${project.artifactId}</artifactId>
+                                    <version>${project.version}</version>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
