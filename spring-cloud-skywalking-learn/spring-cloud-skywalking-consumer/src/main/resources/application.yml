@@ -1,0 +1,3 @@
+application:
+  provider:
+    name: spring-cloud-skywalking-provider

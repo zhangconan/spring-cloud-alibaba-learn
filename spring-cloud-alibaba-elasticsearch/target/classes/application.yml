@@ -1,0 +1,10 @@
+server:
+  port: 8062
+
+elasticSearch:
+  hostList: 127.0.0.1:9200
+  userName:
+  password:
+  client:
+    connectNum: 10
+    connectPerRoute: 50
