@@ -1,8 +1,0 @@
-server:
-  port: 8866
-
-spring:
-  application:
-    name: cloud-alibaba-multi-datasource-learn
-  log:
-    path: /Users/conanzhang/logs/spring-cloud
