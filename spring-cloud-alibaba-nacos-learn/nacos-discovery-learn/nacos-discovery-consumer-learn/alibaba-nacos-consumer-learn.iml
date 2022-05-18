@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="DWSettingsProvider">
+    <option name="passwordKey" value="0baf30e9-f106-4a5b-acb0-9f1de415eb8d" />
+  </component>
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration />
