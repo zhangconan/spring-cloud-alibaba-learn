@@ -4,7 +4,7 @@
 
     <parent>
         <groupId>zkn.spring.cloud.alibaba</groupId>
-        <artifactId>alibaba-nacos-discovery-learn</artifactId>
+        <artifactId>spring-cloud-alibaba-learn</artifactId>
         <version>1.0.0</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>

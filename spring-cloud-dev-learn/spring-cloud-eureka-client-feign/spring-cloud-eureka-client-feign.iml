@@ -52,6 +52,7 @@
     <orderEntry type="library" name="Maven: commons-configuration:commons-configuration:1.10" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject:guice:4.1.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.1" level="project" />
@@ -93,20 +94,6 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:11.8" level="project" />
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:11.8" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.33" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-server:3.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-freemarker:2.6.3" level="project" />
-    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.31" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-servlet:1.19.4" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.19.4" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.19.4" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.19.4" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.1" level="project" />
-    <orderEntry type="library" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.5" level="project" />
-    <orderEntry type="library" name="Maven: org.glassfish.jaxb:txw2:2.3.5" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-loader:2.6.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.6.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.6.3" level="project" />
@@ -142,8 +129,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.4.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:2.4.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:9.1" level="project" />
-    <orderEntry type="library" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
-    <orderEntry type="library" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.21.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest:2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter:5.8.2" level="project" />

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zkn.mybatis.dao.UserMapper">
+
+    <select id="selectByUserId" parameterType="java.lang.String" resultType="com.zkn.mybatis.model.CombineUserInfo">
+        select yu.`user_name` as `user.userName`, yu.`address` as `user.address`, yd.`dep_name` as `department.depName`
+        from yl_user
+        yu inner join yl_user_dep yud on yu.id = yud.user_id inner join yl_department yd on yud.dep_id = yd.id
+        <where>
+            <if test="userId != null">
+                yu.id = #{userId}
+            </if>
+        </where>
+    </select>
+
+    <resultMap id="associationResult" type="com.zkn.mybatis.model.CombineUserInfo">
+        <association property="user" javaType="com.zkn.mybatis.model.User">
+            <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+            <result column="address" jdbcType="VARCHAR" property="address"/>
+        </association>
+        <association property="department" javaType="com.zkn.mybatis.model.Department">
+            <result column="dep_name" jdbcType="VARCHAR" property="depName"/>
+        </association>
+    </resultMap>
+
+    <select id="associationResult" parameterType="java.lang.String" resultMap="associationResult">
+        select yu.*, yd.*
+        from yl_user
+        yu inner join yl_user_dep yud on yu.id = yud.user_id inner join yl_department yd on yud.dep_id = yd.id
+        <where>
+            <if test="userId != null">
+                yu.id = #{userId}
+            </if>
+        </where>
+    </select>
+
+</mapper>
