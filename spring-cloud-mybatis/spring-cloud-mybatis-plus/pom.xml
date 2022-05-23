@@ -23,8 +23,13 @@
         <dependency>
             <groupId>com.github.yulichang</groupId>
             <artifactId>mybatis-plus-join</artifactId>
-            <version>1.2.4</version>
-            <scope>compile</scope>
+        <version>1.2.4</version>
+        <scope>compile</scope>
+    </dependency>
+    <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
     <build>

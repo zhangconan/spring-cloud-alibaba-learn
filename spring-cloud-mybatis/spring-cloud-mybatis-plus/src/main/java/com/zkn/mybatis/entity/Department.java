@@ -1,5 +1,6 @@
 package com.zkn.mybatis.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
@@ -9,6 +10,7 @@ import lombok.Data;
  * @description
  */
 @Data
+@TableName("yl_department")
 public class Department {
 
     /**
