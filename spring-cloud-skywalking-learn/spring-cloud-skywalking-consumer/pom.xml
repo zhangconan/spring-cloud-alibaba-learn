@@ -4,9 +4,8 @@
 
     <parent>
         <groupId>zkn.spring.cloud.alibaba</groupId>
-        <artifactId>spring-cloud-alibaba-learn</artifactId>
+        <artifactId>spring-cloud-skywalking-learn</artifactId>
         <version>1.0.0</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-cloud-skywalking-consumer</artifactId>
@@ -15,7 +14,10 @@
     <name>Spring Cloud Alibaba Skywalking Consumer</name>
     <description>Spring Cloud Skywalking Consumer</description>
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <pluginManagement>

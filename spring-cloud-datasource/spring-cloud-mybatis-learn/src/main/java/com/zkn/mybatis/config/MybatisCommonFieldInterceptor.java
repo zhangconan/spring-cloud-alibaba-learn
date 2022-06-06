@@ -168,22 +168,22 @@ public class MybatisCommonFieldInterceptor implements Interceptor {
      * @param selectBody
      */
     private void processSelectBody(SelectBody selectBody) throws JSQLParserException {
-
-        if (selectBody instanceof PlainSelect) {
-            ((PlainSelect) selectBody).setWhere(new AndExpression(((PlainSelect) selectBody).getWhere(),
-                    CCJSqlParserUtil.parseCondExpression("new sql")));
-        } else if (selectBody instanceof WithItem) {
-            WithItem withItem = (WithItem) selectBody;
-            if (withItem.getSelectBody() != null) {
-                processSelectBody(withItem.getSelectBody());
-            }
-        } else {
-            SetOperationList operationList = (SetOperationList) selectBody;
-            List<SelectBody> selects = operationList.getSelects();
-            for (SelectBody select : selects) {
-                processSelectBody(select);
-            }
-        }
+//
+//        if (selectBody instanceof PlainSelect) {
+//            ((PlainSelect) selectBody).setWhere(new AndExpression(((PlainSelect) selectBody).getWhere(),
+//                    CCJSqlParserUtil.parseCondExpression("new sql")));
+//        } else if (selectBody instanceof WithItem) {
+//            WithItem withItem = (WithItem) selectBody;
+//            if (withItem.getSubSelect() != null) {
+//                processSelectBody(withItem.getSubSelect());
+//            }
+//        } else {
+//            SetOperationList operationList = (SetOperationList) selectBody;
+//            List<SelectBody> selects = operationList.getSelects();
+//            for (SelectBody select : selects) {
+//                processSelectBody(select);
+//            }
+//        }
     }
 
     @Override
