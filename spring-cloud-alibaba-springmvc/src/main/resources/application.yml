@@ -1,0 +1,8 @@
+server:
+  port: 18866
+
+spring:
+  application:
+    name: spring-cloud-alibaba-springmvc
+  log:
+    path: /Users/conanzhang/logs/spring-cloud

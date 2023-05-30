@@ -1,0 +1,30 @@
+spring:
+  arthas:
+    enabled: true
+  application:
+    name: cloud-alibaba-learn-arthas
+
+server:
+  port: 8114
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  server:
+    port: 8114
+
+feign:
+  hystrix:
+    enabled: true
+
+arthas:
+  app-name: ${spring.application.name}
+  http-port: -1
+  telnet-port: -1
+  ## tunnel-server的地址
+  tunnel-server: ws://127.0.0.1:7777/ws
+  ## agent-id可以不用配置，我们可以从 tunnel-server中获取到agent-id。
+  ## http://tunnel-server:8080/actuator/arthas
+  ##agent-id: cloud-alibaba-learn-arthas-test

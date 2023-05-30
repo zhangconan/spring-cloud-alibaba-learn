@@ -1,0 +1,26 @@
+server:
+  port: 8865
+
+spring:
+  application:
+    name: cloud-alibaba-mybatis-plus-learn
+  log:
+    path: /Users/conanzhang/logs/spring-cloud
+  datasource:
+    url: jdbc:mysql://localhost.zkn.com:3306/yl_zkn_dev_test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 1qazxcde32wsX
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: ${SPRING_DATASOURCE_MAXIMUM_POOL_SIZE:100}
+      max-lifetime: ${SPRING_DATASOURCE_MAX_LIFETIME:7100000}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true

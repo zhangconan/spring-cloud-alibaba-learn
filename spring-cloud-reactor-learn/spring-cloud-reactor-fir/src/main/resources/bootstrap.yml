@@ -1,0 +1,10 @@
+server:
+  port: 8866
+
+spring:
+  application:
+    name: spring-cloud-reactor-fir
+
+logging:
+  level:
+    org.springframework: debug

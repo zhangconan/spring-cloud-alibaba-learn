@@ -1,0 +1,12 @@
+server:
+  port: 8061
+spring:
+  application:
+    name: cloud-alibaba-nacos-consumer-learn
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+feign:
+  application:
+    name: cloud-alibaba-nacos-provider-learn
